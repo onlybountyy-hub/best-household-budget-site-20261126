@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NestBudget — Household Budget Planner</title>
+<meta name="description" content="NestBudget is a free, private household budget planner: a live budget calculator, a 50/30/20 check, savings-goal and debt-payoff planners, and realistic example budgets. Everything runs in your browser — no account, no tracking.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#/" aria-label="NestBudget home">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="30" height="30"><path d="M16 3 29 14v15H19V20h-6v9H3V14Z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M11 25h10" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+      </span>
+      <span class="brand-text"><strong>NestBudget</strong><small>Household Budget Planner</small></span>
+    </a>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#/" data-route="">Home</a>
+      <a href="#/calculator" data-route="calculator">Budget Calculator</a>
+      <a href="#/503020" data-route="503020">50/30/20</a>
+      <a href="#/goals" data-route="goals">Savings Goals</a>
+      <a href="#/debt" data-route="debt">Debt Payoff</a>
+      <a href="#/emergency" data-route="emergency">Emergency Fund</a>
+      <a href="#/examples" data-route="examples">Example Budgets</a>
+      <a href="#/method" data-route="method">Method</a>
+      <a href="#/about" data-route="about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main id="view" class="wrap" aria-live="polite"></main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <p><strong>NestBudget</strong> — a household budget planner that runs entirely in your browser. No account, no tracking, no data leaves this page.</p>
+    <p class="fine">Figures are illustrations you edit to match your own household. See <a href="#/method">Method</a> for how every number is computed.</p>
+  </div>
+</footer>
+
+<script src="data.js"></script>
+<script src="calc.js"></script>
+<script src="charts.js"></script>
+<script src="views.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
